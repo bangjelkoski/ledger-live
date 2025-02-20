@@ -1,6 +1,6 @@
 {
   "name": "@bangjelkoski/ledgerhq-hw-transport",
-  "version": "6.31.4",
+  "version": "6.31.4-beta.0",
   "description": "Ledger Hardware Wallet common interface of the communication layer",
   "keywords": [
     "Ledger",

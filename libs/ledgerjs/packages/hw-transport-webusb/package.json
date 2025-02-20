@@ -1,6 +1,6 @@
 {
   "name": "@bangjelkoski/ledgerhq-hw-transport-webusb",
-  "version": "6.29.4",
+  "version": "6.29.4-beta.0",
   "description": "Ledger Hardware Wallet WebUSB implementation of the communication layer",
   "keywords": [
     "Ledger",
