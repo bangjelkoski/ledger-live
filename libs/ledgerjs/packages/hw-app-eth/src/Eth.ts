@@ -50,7 +50,7 @@ const remapTransactionRelatedErrors = e => {
  * const eth = new Eth(transport)
  */
 
-export default class Eth {
+class Eth {
   transport: Transport;
   loadConfig: LoadConfig;
 
@@ -1265,3 +1265,6 @@ export default class Eth {
     return true;
   }
 }
+
+export default Eth;
+export { Eth };

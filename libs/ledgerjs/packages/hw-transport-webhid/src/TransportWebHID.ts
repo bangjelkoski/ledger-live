@@ -53,7 +53,7 @@ async function getFirstLedgerDevice(): Promise<HIDDevice> {
  * TransportWebHID.create().then(transport => ...)
  */
 
-export default class TransportWebHID extends Transport {
+class TransportWebHID extends Transport {
   device: HIDDevice;
   deviceModel: DeviceModel | null | undefined;
   channel = Math.floor(Math.random() * 0xffff);
@@ -243,3 +243,6 @@ export default class TransportWebHID extends Transport {
 
   setScrambleKey() {}
 }
+
+export default TransportWebHID;
+export { TransportWebHID };

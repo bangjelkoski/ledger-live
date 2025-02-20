@@ -51,7 +51,7 @@ export type Observer<EventType, EventError = unknown> = Readonly<{
  * There are different kind of transports based on the technology (channels like U2F, HID, Bluetooth, Webusb) and environment (Node, Web,...).
  * It is an abstract class that needs to be implemented.
  */
-export default class Transport {
+class Transport {
   exchangeTimeout = 30000;
   unresponsiveTimeout = 15000;
   deviceModel: DeviceModel | null | undefined = null;
@@ -445,3 +445,6 @@ export default class Transport {
   static ErrorMessage_ListenTimeout = "No Ledger device found (timeout)";
   static ErrorMessage_NoDeviceFound = "No Ledger device found";
 }
+
+export default Transport;
+export { Transport };

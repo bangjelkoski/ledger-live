@@ -36,7 +36,7 @@ const SW_CANCEL = 0x6986;
  * const cosmos = new Cosmos(transport)
  */
 
-export default class Cosmos {
+class Cosmos {
   transport: Transport;
 
   constructor(transport: Transport, scrambleKey: string = APP_KEY) {
@@ -194,3 +194,6 @@ export default class Cosmos {
     });
   }
 }
+
+export default Cosmos;
+export { Cosmos };

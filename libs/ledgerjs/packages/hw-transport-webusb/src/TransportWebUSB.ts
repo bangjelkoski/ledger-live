@@ -23,7 +23,7 @@ const endpointNumber = 3;
  * ...
  * TransportWebUSB.create().then(transport => ...)
  */
-export default class TransportWebUSB extends Transport {
+class TransportWebUSB extends Transport {
   device: USBDevice;
   deviceModel: DeviceModel | null | undefined;
   channel = Math.floor(Math.random() * 0xffff);
@@ -219,3 +219,6 @@ async function gracefullyResetDevice(device: USBDevice) {
     console.warn(err);
   }
 }
+
+export default TransportWebUSB;
+export { TransportWebUSB };
